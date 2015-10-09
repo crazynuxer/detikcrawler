@@ -8,5 +8,7 @@ Homework sesi #1
 Silahkan fork repository ini lalu clone ke pc masing2
 
 Jawaban:
+
 jalan script crawlImages seperti dibawah ini jika ingin melakukan crawl www.detik.com, jika website lain ganti saja domainnya
+
 /usr/bin/python crawlImages.py http://www.detik.com
