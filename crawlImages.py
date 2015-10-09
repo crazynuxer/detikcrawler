@@ -49,7 +49,7 @@ def crawlPages(url):
 
 pages = crawlPages(sys.argv[1])
 mapImg = {}
-totalImg = 0
+
 for i in pages:
    try:
       countImage(i,sys.argv[1])
