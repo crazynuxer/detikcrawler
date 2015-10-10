@@ -6,20 +6,20 @@ from bs4 import BeautifulSoup
 def countImage(url, page):
     
     if url.startswith('http'):
-        r = requests.get(url)
+        r = requests.head(url)
         uri = r.url
         length = r.headers['content-length']
     elif url.startswith('//'):
-        r = requests.get('http:'+url)
+        r = requests.head('http:'+url)
         uri = r.url
         length = r.headers['content-length']
     elif url.startswith('/'):
-        r = requests.get(page + url)
+        r = requests.head(page + url)
         uri = r.url
         length = r.headers['content-length']
     else:
         try:
-           r = requests.get(page + '/'+url)
+           r = requests.head(page + '/'+url)
            uri = r.url
            length = r.headers['content-length']
         except:
