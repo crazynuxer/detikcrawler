@@ -44,7 +44,7 @@ def crawlPages(url):
     except:
         print 'Url error'
         sys.exit(0)
-
+    #imgLinks = set(imgLinks) #remove duplicate data in list
     return imgLinks
 
 pages = crawlPages(sys.argv[1])
