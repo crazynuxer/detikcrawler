@@ -55,5 +55,5 @@ for i in pages:
       countImage(i,sys.argv[1])
    except:
       print i
-
+print 'Total tag img ' + str(len(pages))
 print 'Total ' + str(sum(mapImg.values()) / 1024 ) + 'K' 
